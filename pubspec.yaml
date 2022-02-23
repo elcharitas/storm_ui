@@ -1,9 +1,7 @@
 name: storm_ui
-description: A free Flutter project coded by Creative Tim.
-
-# The following line prevents the package from being accidentally published to
-# pub.dev using `pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+description: Modern Approach to Flutter UI design
+homepage: https://sketchstorm.ng/storm_ui
+repository: https://github.com/elcharitas/storm_ui
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -15,7 +13,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 1.0.2
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -29,12 +27,12 @@ dependencies:
   scrollable_positioned_list: ^0.1.7
   carousel_slider: ^2.2.1
 
-  # useful utils
-  url_launcher: ^5.5.2
-
   # icons for application
   font_awesome_flutter: ^8.8.1
   cupertino_icons: ^1.0.0
+
+  # doc generator
+  dartdoc: 5.0.1
 
 dev_dependencies:
   flutter_test:

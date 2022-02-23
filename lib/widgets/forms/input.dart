@@ -1,6 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:storm_ui/constants/colors.dart';
+part of '../../storm_ui.dart';
 
+/**
+ * 
+ */
 class Input extends StatelessWidget {
   final String placeholder;
   final Widget suffixIcon;
@@ -29,7 +31,8 @@ class Input extends StatelessWidget {
         onChanged: onChanged,
         controller: controller,
         autofocus: autofocus,
-        style: TextStyle(height: 0.55, fontSize: 13.0, color: StormUIColors.time),
+        style:
+            TextStyle(height: 0.55, fontSize: 13.0, color: StormUIColors.time),
         textAlignVertical: TextAlignVertical(y: 0.6),
         decoration: InputDecoration(
             filled: true,
@@ -47,7 +50,6 @@ class Input extends StatelessWidget {
                 borderRadius: BorderRadius.circular(32.0),
                 borderSide: BorderSide(
                     color: borderColor, width: 1.0, style: BorderStyle.solid)),
-            hintText: placeholder)
-    );
+            hintText: placeholder));
   }
 }

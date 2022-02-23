@@ -1,15 +1,12 @@
-import 'package:flutter/material.dart';
-import 'package:styled_widget/styled_widget.dart';
-import 'package:storm_ui/constants/colors.dart';
+part of '../../storm_ui.dart';
 
 class CardSquare extends StatelessWidget {
-  CardSquare({
-    Widget this.title = const Text(""),
-    Widget this.cta = const Text(""),
-    Color this.color = null,
-    this.img = "assets/imgs/storm_ui.png",
-    this.tap = defaultFunc
-  });
+  CardSquare(
+      {Widget this.title = const Text(""),
+      Widget this.cta = const Text(""),
+      Color this.color = null,
+      this.img = "assets/imgs/storm_ui.png",
+      this.tap = defaultFunc});
 
   final Widget cta;
   final Widget title;
@@ -32,29 +29,29 @@ class CardSquare extends StatelessWidget {
               image: DecorationImage(
                 image: NetworkImage(img),
                 fit: BoxFit.cover,
-              ))
-      ).flexible(flex: 3),
-      <Widget>[
-        title,
-        cta.padding(top: 8.0)
-      ].toColumn(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.start,
-      ).padding(all: 16.0)
+              ))).flexible(flex: 3),
+      <Widget>[title, cta.padding(top: 8.0)]
+          .toColumn(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+          )
+          .padding(all: 16.0)
           .flexible(flex: 1)
-    ].toColumn(mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,)
+    ]
+        .toColumn(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+        )
         .gestures(onTap: tap)
         .height(255)
         .flexible()
         .card(
-        elevation: 3,
-        color: color,
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(4.0))
-        )
-    );
+            elevation: 3,
+            color: color,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(4.0))));
   }
+
   Widget build2(BuildContext context) {
     return Container(
         height: 250,

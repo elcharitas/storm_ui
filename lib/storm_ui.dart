@@ -1,16 +1,24 @@
 library storm_ui;
 
+// only the required packages are imported once
+import 'package:flutter/material.dart';
+import 'package:styled_widget/styled_widget.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+// constansts and certain
+import 'constants/colors.dart';
+
 // buttons widgets
-import 'package:storm_ui/widgets/buttons/simple.dart';
-import 'package:storm_ui/widgets/buttons/rounded.dart';
+part 'widgets/buttons/simple.dart';
+part 'widgets/buttons/rounded.dart';
 
 // cards widgets
-import 'package:storm_ui/widgets/cards/simple.dart';
-import 'package:storm_ui/widgets/cards/side.dart';
-import 'package:storm_ui/widgets/cards/square.dart';
+part 'widgets/cards/simple.dart';
+part 'widgets/cards/side.dart';
+part 'widgets/cards/square.dart';
 
 // forms and navigation
-import 'package:storm_ui/widgets/forms/input.dart';
-import 'package:storm_ui/widgets/navigation/drawer.dart';
-import 'package:storm_ui/widgets/navigation/tile.dart';
-import 'package:storm_ui/widgets/navigation/navbar.dart';
+part 'widgets/forms/input.dart';
+part 'widgets/navigation/drawer.dart';
+part 'widgets/navigation/tile.dart';
+part 'widgets/navigation/navbar.dart';

@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:storm_ui/constants/colors.dart';
+part of '../../storm_ui.dart';
 
 class SideImageCard extends StatelessWidget {
   SideImageCard(
